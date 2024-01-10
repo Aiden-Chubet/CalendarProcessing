@@ -2,8 +2,8 @@
 
 Install-Module -Name ExchangeOnlineManagement -Scope CurrentUser
 
-Connect-ExchangeOnline -UserPrincipalName achubet@cmhacc.org
+Connect-ExchangeOnline -UserPrincipalName achubet@domain.org
 
-Get-CalendarProcessing -Identity CMHA-233MainStreetBoardRoom715@cmhacc.org | Format-List Identity,DeleteComments,DeleteSubject,AddOrganizerToSubject,RemovePrivateProperty,DeleteAttachments
+Get-CalendarProcessing -Identity Company-233MainStreetBoardRoom715@domain.org | Format-List Identity,DeleteComments,DeleteSubject,AddOrganizerToSubject,RemovePrivateProperty,DeleteAttachments
 
-Set-CalendarProcessing -Identity CMHA-233MainStreetBoardRoom715@cmhacc.org -AddOrganizerToSubject $false -OrganizerInfo $true -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
+Set-CalendarProcessing -Identity Company-233MainStreetBoardRoom715@domain.org -AddOrganizerToSubject $false -OrganizerInfo $true -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
